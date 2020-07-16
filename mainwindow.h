@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QDialog>
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
@@ -10,5 +10,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QDialog modelessDialog;
 };
 #endif // MAINWINDOW_H
